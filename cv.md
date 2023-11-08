@@ -18,6 +18,7 @@ I am 35 years old. I graduated from Izhevsk State Technical University in 2013. 
 - Git
 - VC CODE
 - Notepad
+- Chrome Dev Tools
 
 ## Code example
 
@@ -45,3 +46,9 @@ Example of solving a task on the platform codewars.com (kata^ Data Reverse)
 - _Free course on the stepik.org platform - JavaScript for Beginners_ (in progress)
 - _Free course on the GitHowTo platform_
 - _Free course by RSSCHOOL stage 0_
+
+# Expierence
+
+    - educational project under the ITMO University free course program on the open-edu platform
+        [github](https://github.com/ksenofonus/education-project.git)
+    - educational progect RSSCHOOL stage 0 free course programm
