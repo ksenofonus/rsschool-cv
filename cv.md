@@ -52,3 +52,9 @@ Example of solving a task on the platform codewars.com (kata^ Data Reverse)
     - educational project under the ITMO University free course program on the open-edu platform
         [github](https://github.com/ksenofonus/education-project.git)
     - educational progect RSSCHOOL stage 0 free course programm
+
+# Languages
+
+    - Russian - native
+    - English - B1 Intermediate
+    - Udmurt - beginner
