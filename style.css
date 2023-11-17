@@ -21,7 +21,7 @@ body {
   background-color: burlywood;
   width: 100%;
   margin: 0 auto;
-  padding: 15px;
+  padding: 30px;
 }
 
 .nav-list {
@@ -47,6 +47,13 @@ body {
 .nav-item a:hover, .nav-item a:focus {
   color: green;
 }
+.section-profile {
+  display: flex;
+}
 .section-profile_img {
   width: 200px;
+}
+.section-profile_info {
+  margin-left: 50px;
+  margin-right: 100px;
 }
