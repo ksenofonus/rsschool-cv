@@ -22,7 +22,86 @@
           </nav>
     </div>
 </header>
-<main></main>
-<footer></footer>
+<main>
+  <div class="container main-container">
+    <section class="section section-profile">
+    <img src="./assets/img/photo.jpg" alt="my photo" class="section-profile_img">
+    <div class="section-profile_info">
+        <h1 class="section-profile_title">Kseniya Danilova</h1>
+        <p class="section-profile_text">Junior Front-end Developer</p>
+    </div>
+</section>
+<section class="section section-contacts" id="contacts">
+    <h2 class="section_title">Contacts</h2>
+    <ul>
+        <li class="section-contacts_item"><b>Phone:</b> +7-912-444-888-3</li>
+        <li class="section-contacts_item"><b>Email:</b> danilova.ka88@ya.ru</li>
+        <li class="section-contacts_item"><b>GitHub:</b> <a href="https://github.com/ksenofonus">@ksenofonus</a></li>
+        <li class="section-contacts_item"><b>Discord:</b><a href="https://discord.com/channels/@ksenofonus">ksenofonus</a></li>
+    </ul>
+</section>
+<section class="section section-summary" id="summary">
+    <h2 class="section_title">About me</h2>
+    <p>I am 35 years old. I graduated from Izhevsk State Technical University in 2013. My specialty is bachelor in construction and technology. I am currently working as a construction engineer. When I wanted to automate my routine work, I got interested in programming. Studying the topic of programming, it became interesting for me to delve into it and get a new specialty and get a job in this area. My strengths that help me achieve my goal: good learning ability, ability to concentrate on a task, ability to perform routine tasks, perseverance.</p>
+</section>
+<section class="section" id="education">
+    <h2 class="section_title">Education</h2>
+    <ul>
+        <li>Izhevsk State Technical University: 2009-2013, Bachelor in construction and technology</li>
+        <li>Free ITMO University courses on the openedu platform - Web programming - 2022</li>
+        <li>Free course on the stepik.org platform - Web Development for Beginners: HTML and CSS</li>
+        <li>Free course on the stepik.org platform - JavaScript for Beginners_ (in progress)</li>
+        <li>Free course on the GitHowTo platform</li>
+    </ul>
+</section>
+<section class="section section-skills" id="skills">
+    <h2 class="section_title">My skills</h2>
+    <ul>
+        <li>HTML5/CSS3</li>
+        <li>JavaScript (basic)</li>
+        <li>Git</li>
+        <li>VC CODE</li>
+        <li>Notepad</li>
+        <li>Chrome Dev Tools</li>
+    </ul>
+</section>
+<section class="section section-code" id="code">
+    <h2 class="section_title">Code example</h2>
+    <pre><code>
+        function dataReverse(data) {
+        let subarray = []; //массив в который будет выведен результат.
+        for (let i = 0; i &lt; (data.length / 8); i++){
+          subarray[i] = data.slice((i*8), (i*8) + 8);
+      }
+        let revarray = subarray.reverse();
+        let result = [];
+        revarray.forEach((item) => result = result.concat(item));
+        return result;
+      }
+    </code></pre>
+</section>
+<section class="section section-lang" id="lang">
+    <h2 class="section_title">Languages</h2>
+    <ul>
+        <li>Russian - native;</li>
+        <li>English - B1 Intermediate.</li>
+        <li>Udmurt - beginner</li>
+    </ul>
+</section>
+<section class="section" id="expierence">
+    <h2 class="section_title">Expierence</h2>
+    <ul>
+        <li>educational project under the ITMO University free course program on the open-edu platform <a href="https://ksenofonus.github.io/education-project/">A+</a></li>
+        <li>educational project RSSCHOOL stage 0 free course programm
+        </li>
+    </ul>
+</section>
+</div>
+</main>
+<footer>
+    <div class="container">
+        <div>&copy; 2023 <a href="https://github.com/ksenofonus">KSENOFONUS</a></div>
+    </div>
+</footer>
 </body>
 </html>
