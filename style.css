@@ -10,26 +10,31 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: burlywood;
   font-family: Roboto;
   font-size: 20px;
   font-weight: 400;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 .container {
+  max-width: 1440px;
+  background-color: burlywood;
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
+  padding: 15px;
 }
-.nav {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .nav-list {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   list-style: none;
+  margin: 0 auto;
+}
+.nav-item {
+  margin-right: 15px;
 }
 
 .nav-item a {
