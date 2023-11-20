@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("./assets/fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Lato";
+  src: url("./assets/fonts/Lato-Regular.ttf");
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  padding: 0 30px;
+}
+.container {
+  max-width: 1440px;
+  background-color: burlywood;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.nav-list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0 auto;
+}
+.nav-item {
+  margin-right: 15px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: black;
+  font-family: Lato;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  font-weight: 600;
+}
+.nav-item a:hover, .nav-item a:focus {
+  color: green;
+}
+.section_title {
+  font-family: Lato;
+  font-size: 25px;
+}
+.section-profile {
+  display: flex;
+}
+.section-profile_img {
+  width: 200px;
+}
+.section-profile_info {
+  margin-left: 50px;
+  margin-right: 100px;
+}
