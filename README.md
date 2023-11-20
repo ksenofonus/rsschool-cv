@@ -1,1 +1,1 @@
-https://ksenofonus.github.io/rsschool-cv/cv
+https://ksenofonus.github.io/rsschool-cv/
