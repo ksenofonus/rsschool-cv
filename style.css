@@ -27,6 +27,7 @@ h1, h2 {
 a {
   text-decoration: none;
   color: inherit;
+  transition: all 0.5s ease;
 }
 a:hover, a:focus {
   color: #5F89BF;
@@ -183,7 +184,6 @@ body {
   color: #5F89BF;
 }
 .about__text {
-  
   text-align: justify;
 }
 .expierence__item a{
@@ -194,4 +194,11 @@ body {
   min-height: 150px;
   align-items: center;
   justify-content: space-evenly;
+}
+.footer__link {
+  width: 200px;
+}
+.footer__link svg:hover {
+  fill: #5F89BF;
+  transition: all 0.5s ease;
 }
