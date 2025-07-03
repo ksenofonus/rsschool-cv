@@ -1,30 +1,97 @@
 @font-face {
-  font-family: "Roboto";
-  src: url("./assets/fonts/Roboto-Regular.ttf");
+    font-family: 'Rubik';
+    src: url('./assets/fonts/Rubik/Rubik-Regular.eot');
+    src: url('./assets/fonts/Rubik/Rubik-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Rubik/Rubik-Regular.woff2') format('woff2'),
+        url('./assets/fonts/Rubik/Rubik-Regular.woff') format('woff'),
+        url('./assets/fonts/Rubik/Rubik-Regular.svg#Rubik-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: "Lato";
-  src: url("./assets/fonts/Lato-Regular.ttf");
+  font-family: 'Material Icons';
+  font-style: normal;
+  src: url('./assets/fonts/Material_Icons/MaterialIcons-Regular.ttf') format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-position: inside;
+}
+h1, h2 {
+  color: #5D5D5D;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.5s ease;
+}
+a:hover, a:focus {
+  color: #5F89BF;
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }
 html {
   scroll-behavior: smooth;
 }
 body {
-  width: 100%;
-  font-family: Roboto;
+  font-family: Rubik, Arial, sans-serif;
   font-size: 20px;
   font-weight: 400;
   box-sizing: border-box;
   overflow-x: hidden;
-  padding: 0 30px;
+  color: #6A6A6A;
+  line-height: 140%;
 }
 .container {
   max-width: 1440px;
-  background-color: burlywood;
   margin: 0 auto;
-  padding: 30px;
+  border: 1px solid #F6F6F6;
 }
-
+.header-container, .footer-container {
+  padding: 30px 20px;
+  background-color: #F6F6F6;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 450px 2fr;
+  grid-template-rows: minmax(100px, auto);
+}
+.grid-column {
+  padding: 100px 20px 20px;
+}
+.grid-column__left {
+  background-color: #F6F6F6;
+  position: relative;
+  z-index: 1;
+}
+.grid-column__right {
+  padding-left: 50px;
+}
 .nav-list {
   width: 100%;
   margin: 0;
@@ -42,26 +109,96 @@ body {
 
 .nav-item a {
   text-decoration: none;
-  color: black;
-  font-family: Lato;
+  color: #5D5D5D;
   text-transform: uppercase;
   transition: all 0.5s ease;
   font-weight: 600;
 }
 .nav-item a:hover, .nav-item a:focus {
-  color: green;
+  color: #5F89BF;
 }
-.section_title {
-  font-family: Lato;
+.section {
+  margin-bottom: 30px;
+}
+.section__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  border-bottom: 1px solid #5F89BF;
+  margin: 20px 0;
+  padding: 20px 0;
+  gap: 10px;
+}
+.grid-column__left::before {
+  display: block;
+  content: '';
+  position: absolute;
+  border-top: 450px solid #5F89BF;
+	border-right: 450px solid transparent;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile__info {
+  text-align: center;
+}
+.profile__text {
+  font-weight: bold;
   font-size: 25px;
 }
-.section-profile {
-  display: flex;
+.profile__title {
+  color: #5F89BF;
+  font-size: 50px;
+  margin-bottom: 20px;
+  line-height: 100%;
 }
-.section-profile_img {
+.profile__img {
+  width: 250px;
+  height: 250px;
+  border: 10px solid white;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.profile__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+.contacts__item a {
+  transition: all 0.5s ease ;
+  display: flex;
+  gap: 10px;
+}
+.contacts__item a:hover {
+  color: #5F89BF;
+}
+.about__text {
+  text-align: justify;
+}
+.expierence__item a{
+  color: #5F89BF;
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer__link {
   width: 200px;
 }
-.section-profile_info {
-  margin-left: 50px;
-  margin-right: 100px;
+.footer__link svg:hover {
+  fill: #5F89BF;
+  transition: all 0.5s ease;
 }
