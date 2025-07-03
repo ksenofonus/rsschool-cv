@@ -15,7 +15,7 @@
                     <ul class="nav-list">
                       <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
                       <li class="nav-item"><a href="#summary" class="nav-link">About me</a></li>
-                      <li class="nav-item"><a href="#skills" class="nav-link">My skills</a></li>
+                      <li class="nav-item"><a href="#skills" class="nav-link">My hard skills</a></li>
                       <li class="nav-item"><a href="#code" class="nav-link">Code example</a></li>
                       <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
                       <li class="nav-item"><a href="#lang" class="nav-link">Languages</a></li>
@@ -33,7 +33,7 @@
                           <img src="./assets/img/photo.jpg" alt="Kseniya Danilova">
                         </div>
                         <div class="profile__info">
-                          <h1 class="profile__title">Kseniya Danilova</h1>
+                          <h1 class="profile__title">Kseniya<br>Danilova</h1>
                           <p class="profile__text">Junior Front-End Developer</p>
                         </div>
                     </section>
@@ -51,62 +51,65 @@
                                     </span>danilova.ka88@ya.ru</a></li>
                                 <li class="contacts__item"> <a href="https://github.com/ksenofonus"><span class="material-icons">
                                     commit
-                                    </span>@ksenofonus</a></li>
+                                    </span>Github: @ksenofonus</a></li>
                                 <li class="contacts__item"><a href="https://discord.com/channels/@ksenofonus"><span class="material-icons">
                                     tag
-                                    </span>ksenofonus</a></li>
+                                    </span>Discord: ksenofonus</a></li>
                             </ul>
                     </section>
                     <section class="section about" id="about">
                         <h2 class="section__title"><span class="material-icons">
                             man_4
                             </span>About me</h2>
-                        <p>I am 35 years old. I graduated from Izhevsk State Technical University in 2013. My specialty is bachelor in construction and technology. I am currently working as a construction engineer. When I wanted to automate my routine work, I got interested in programming. Studying the topic of programming, it became interesting for me to delve into it and get a new specialty and get a job in this area. My strengths that help me achieve my goal: good learning ability, ability to concentrate on a task, ability to perform routine tasks, perseverance.</p>
+                        <p class="about__text">I am 36 years old. I graduated from Izhevsk State Technical University in 2013. My specialty is bachelor in construction and technology. I am working as a construction engineer. When I wanted to automate my routine work, I got interested in programming. It's became interesting for me  and I decided to get a new speciality and a job in this area. My strengths that help me achieve my goal: good learning ability, ability to concentrate on a task, ability to perform routine tasks, perseverance.</p>
                     </section>
-                    <section class="section section-skills" id="skills">
+                    <section class="section skills" id="skills">
                         <h2 class="section__title"><span class="material-icons">
                             extension
-                            </span>My skills</h2>
-                        <ul>
-                          <li>HTML5/CSS3</li>
-                          <li>JavaScript (basic)</li>
-                          <li>Git</li>
-                          <li>VC CODE</li>
-                          <li>Notepad</li>
-                          <li>Chrome Dev Tools</li>
+                            </span>My hard skills</h2>
+                        <ul class="skills__list">
+                          <li class="skills__item">HTML5</li>
+                          <li class="skills__item">CSS3/SCSS</li>
+                          <li class="skills__item">JavaScript</li>
+                          <li class="skills__item">Git</li>
+                          <li class="skills__item">Visual Studio Code</li>
+                          <li class="skills__item">Chrome Dev Tools</li>
+                          <li class="skills__item">Pug preprocessor</li>
+                          <li class="skills__item">Webpack</li>
                         </ul>
                       </section>
                 </div>
-                
-                <div class="grid-column">
-                    <section class="section" id="education">
+                <div class="grid-column grid-column__right">
+                    <section class="section education" id="education">
                         <h2 class="section__title"><span class="material-icons">
                             school
                             </span>Education</h2>
-                        <ul>
-                          <li>Izhevsk State Technical University: 2009-2013, Bachelor in construction and technology</li>
-                          <li>Free ITMO University courses on the openedu platform - Web programming - 2022</li>
-                          <li>Free course on the stepik.org platform - Web Development for Beginners: HTML and CSS</li>
-                          <li>Free course on the stepik.org platform - JavaScript for Beginners_ (in progress)</li>
-                          <li>Free course on the GitHowTo platform</li>
+                        <ul class="education__list">
+                          <li class="education__item">Izhevsk State Technical University: 2009-2013, Bachelor in construction and technology</li>
+                          <li class="education__item">ITMO University course - Web programming - 2022</li>
+                          <li class="education__item">stepik.org platform - Web Development for Beginners: HTML and CSS</li>
+                          <li class="education__item">stepik.org platform - JavaScript for Beginners</li>
+                          <li class="education__item">GitHowTo course</li>
+                          <li class="education__item">RSSchool course - JavaScript/Front-end Pre-School 2024</li>
+                          <li class="education__item">RSSchool course - JavaScript/Front-end 2024</li>
                         </ul>
                     </section>
                     <section class="section section-code" id="code">
                         <h2 class="section__title"><span class="material-icons">
                             code
                             </span>Code example</h2>
-                        <pre><code>
-                          function dataReverse(data) {
-                          let subarray = []; //массив в который будет выведен результат.
-                          for (let i = 0; i &lt; (data.length / 8); i++){
-                            subarray[i] = data.slice((i*8), (i*8) + 8);
-                        }
-                          let revarray = subarray.reverse();
-                          let result = [];
-                          revarray.forEach((item) =&gt; result = result.concat(item));
-                          return result;
-                        }
-                        </code></pre>
+                            <pre><code>
+function dataReverse(data) {
+let subarray = [];
+for (let i = 0; i &lt; (data.length / 8); i++){
+subarray[i] = data.slice((i*8), (i*8) + 8);
+}
+let revarray = subarray.reverse();
+let result = [];
+revarray.forEach((item) =&gt; result = result.concat(item));
+return result;
+}
+</code></pre>
                       </section>
                       <section class="section section-lang" id="lang">
                         <h2 class="section__title"><span class="material-icons">
@@ -118,13 +121,18 @@
                           <li>Udmurt - beginner</li>
                         </ul>
                       </section>
-                      <section class="section" id="expierence">
+                      <section class="section expierence" id="expierence">
                         <h2 class="section__title"><span class="material-icons">
                             business_center
                             </span>Expierence</h2>
-                        <ul>
-                          <li>educational project under the ITMO University free course program on the open-edu platform <a href="https://ksenofonus.github.io/education-project/">A+</a></li>
-                          <li>educational project RSSCHOOL stage 0 free course programm
+                        <ul class="expierence__list">
+                          <li class="expierence__item">Educational project under the ITMO University <a href="https://ksenofonus.github.io/education-project/">A+</a></li>
+                          <li class="expierence__item">Educational project <a href="https://rolling-scopes-school.github.io/ksenofonus-JSFEPRESCHOOL2024Q2/shelter/index.html">Shelter</a>
+                          </li>
+                          <li class="expierence__item">Educational project <a href="https://ksenofonus.github.io/christmas-shop/christmas-shop/">Christmas-shop</a>
+                          </li>
+                          <li class="expierence__item">Educational project <a href="https://ksenofonus.github.io/toxin/">Toxin Hotel</a>
+                          <li class="expierence__item">Educational project <a href="https://ksenofonus.github.io/coffee-house/coffee-house/index.html">Coffee-house</a>
                           </li>
                         </ul>
                       </section>
@@ -133,11 +141,11 @@
           </div>
           </main>
           <footer>
-            <div class="container">
-                <div>&copy; 2023 <a href="https://github.com/ksenofonus">KSENOFONUS</a></div>
+            <div class="container footer-container">
+                <span>&copy;2025</span>
+                <a href="https://github.com/ksenofonus">KSENOFONUS</a>
             </div>
           </footer>
     </div>
-  
 </body>
 </html>
