@@ -1,1 +1,1 @@
-# rsschool-cv
+https://ksenofonus.github.io/rsschool-cv/
